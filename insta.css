@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+span{
+    color:blue;
+}
+.Main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:5rem;
+}
+.image{
+    text-align: center;
+}
+.image img{
+    width:50%;
+    height:50%;
+    object-fit: cover;
+    position:relative;
+    box-shadow: 0 1rem 2rem 0.8rem rgba(0,0,0,0.2);
+}
+.image .fa{
+    position: absolute;
+    color:red;
+    top:35%;
+    left:50%;
+    transform: translate(-50%,50%);
+    animation: heartGrow 0.8s linear;
+    -webkit-animation: heartGrow 0.8s linear;
+}
+
+@keyframes heartGrow{ 
+    100%{
+        transform: scale(15);
+        opacity: 0;
+    }
+}
